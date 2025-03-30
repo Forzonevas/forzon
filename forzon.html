@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forzon - No-Code Front-End Design</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+      
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Controls spacing between image and text */
+        }
+        
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .logo {
+            font-family: "Orbitron", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #007BFF, #8000FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 10px rgba(128, 0, 255, 0.6);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px; /* Adjust spacing between buttons */
+        }
+
+        .main-heading {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 50px;
+        }
+        
+        .text {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00eaff, #8000ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px rgba(0, 234, 255, 0.8); }
+            100% { text-shadow: 0 0 20px rgba(128, 0, 255, 0.8); }
+        }
+
+        
+        .buttons {
+            button {
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Deep Purple to Electric Blue */
+    border: none;
+    padding: 16px 35px;
+    margin: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px; /* Fully rounded for a sleek pill shape */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb); /* Reverse gradient for a cool effect */
+    box-shadow: 0 6px 20px rgba(37, 117, 252, 0.5);
+    transform: scale(1.05);
+}
+
+
+        }
+        
+        .paragrap-1{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 3000;
+    color: #D9D9D9; /* Soft Light Gray */
+    line-height: 1.6; /* Improves readability */
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+.content{
+
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #E3E3E3; /* Soft White */
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+  
+.divider {
+    width: 95%;
+    height: 3px;
+    background: linear-gradient(90deg, #555, #999);
+    margin-bottom: 15px auto;
+    margin-top: 5px auto;
+    border: none;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; width: 100%; }
+    to { opacity: 1; width: 100%; }
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.button-support{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover Effect - Turns into a button */
+.button-support:hover {
+    background: linear-gradient(90deg, #ff4500, #ff2e63);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(255, 69, 0, 0.5);
+            transform: scale(1.05);
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="logo-container">
+            <img src="forzon.jpeg" alt="Logo Image" class="logo-img">
+            <span class="logo">Forzon</span>
+        </div>
+            <a class="button-support">Home</a>
+            <a class="button-support">Library</a>
+            <a class="button-support">Support</a>
+        </div>
+    </div>
+    
+    <!-- Divider -->
+    <div class="divider"></div>   
+    <h1 class="main-heading">Creativity Meets Automation</h1>
+    <div class="buttons">
+        <button>Create New</button>
+        <button>Previous Projects</button>
+    </div>
+    <div class="content">
+        <h2></h2>
+        <p class="paragrap-1">
+           
+        </p>
+    </div>
+</body>
+</html>
